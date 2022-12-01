@@ -1,5 +1,27 @@
 {
   "compilerOptions": {
+    "paths": {
+      "app/functions": ["./functions"],
+      "app/functions/*": ["./functions/*"],
+      "app/config": ["./config"],
+      "app/config/*": ["./config/*"],
+      "app/hooks": ["./hooks"],
+      "app/hooks/*": ["./hooks/*"],
+      "app/components": ["./components/index.ts"],
+      "app/components/*": ["./components/*"],
+      "app/entities": ["./entities"],
+      "app/entities/*": ["./entities/*"],
+      "app/constants": ["./constants"],
+      "app/constants/*": ["./constants/*"],
+      "app/modals": ["./modals"],
+      "app/modals/*": ["./modals/*"],
+      "app/state": ["./state"],
+      "app/state/*": ["./state/*"],
+      "app/services": ["./services"],
+      "app/services/*": ["./services/*"],
+      "app/animations": ["./animations"],
+      "app/animations/*": ["./animations/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -15,6 +37,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "polyfill.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
